@@ -1,0 +1,13 @@
+C:\Users\edyta.marcisz\Desktop\C#\cS-Assignment3-bankSystem-sql\cS-Assignment3-bankSystem-sql\bin\Debug\cS-Assignment3-bankSystem-sql.exe.config
+C:\Users\edyta.marcisz\Desktop\C#\cS-Assignment3-bankSystem-sql\cS-Assignment3-bankSystem-sql\obj\Debug\cS-Assignment3-bankSystem-sql.csprojResolveAssemblyReference.cache
+C:\Users\edyta.marcisz\Desktop\C#\cS-Assignment3-bankSystem-sql\cS-Assignment3-bankSystem-sql\obj\Debug\Interop.ADODB.dll
+C:\Users\edyta.marcisz\Desktop\C#\cS-Assignment3-bankSystem-sql\cS-Assignment3-bankSystem-sql\obj\Debug\cS-Assignment3-bankSystem-sql.csproj.ResolveComReference.cache
+C:\Users\edyta.marcisz\Desktop\C#\cS-Assignment3-bankSystem-sql\cS-Assignment3-bankSystem-sql\obj\Debug\cS_Assignment3_bankSystem_sql.Form1.resources
+C:\Users\edyta.marcisz\Desktop\C#\cS-Assignment3-bankSystem-sql\cS-Assignment3-bankSystem-sql\obj\Debug\cS_Assignment3_bankSystem_sql.Properties.Resources.resources
+C:\Users\edyta.marcisz\Desktop\C#\cS-Assignment3-bankSystem-sql\cS-Assignment3-bankSystem-sql\obj\Debug\cS-Assignment3-bankSystem-sql.csproj.GenerateResource.Cache
+C:\Users\edyta.marcisz\Desktop\C#\cS-Assignment3-bankSystem-sql\cS-Assignment3-bankSystem-sql\bin\Debug\cS-Assignment3-bankSystem-sql.exe
+C:\Users\edyta.marcisz\Desktop\C#\cS-Assignment3-bankSystem-sql\cS-Assignment3-bankSystem-sql\bin\Debug\cS-Assignment3-bankSystem-sql.pdb
+C:\Users\edyta.marcisz\Desktop\C#\cS-Assignment3-bankSystem-sql\cS-Assignment3-bankSystem-sql\obj\Debug\cS-Assignment3-bankSystem-sql.exe
+C:\Users\edyta.marcisz\Desktop\C#\cS-Assignment3-bankSystem-sql\cS-Assignment3-bankSystem-sql\obj\Debug\cS-Assignment3-bankSystem-sql.pdb
+C:\Users\edyta.marcisz\Desktop\C#\cS-Assignment3-bankSystem-sql\cS-Assignment3-bankSystem-sql\obj\Debug\cS_Assignment3_bankSystem_sql.FormWithdrawal.resources
+C:\Users\edyta.marcisz\Desktop\C#\cS-Assignment3-bankSystem-sql\cS-Assignment3-bankSystem-sql\obj\Debug\cS_Assignment3_bankSystem_sql.FormTransaction.resources

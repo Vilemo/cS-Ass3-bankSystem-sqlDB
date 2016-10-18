@@ -1,0 +1,97 @@
+SELECT ti.tID, ti.tType, ti.tAmount, ti.tDate, ti.tTime, ai.aClientName 
+FROM TransactionsInfo AS ti INNER JOIN AccountInfo AS ai
+ON ti.tClientID=ai.aClientID
+WHERE tClientID='Alan'
+ORDER BY tID;
+============================================
+============================================
+CREATE DATABASE bankSystem;
+============================================
+CREATE TABLE login(
+lClientID varchar(15) PRIMARY KEY,
+lPass varchar(15));
+
+INSERT INTO login (lClientID, lPass) 
+VALUES('Alan', 'Alan123');
+VALUES('Ola', 'Ola123');
+VALUES('Jana', 'Jana123');
+VALUES('Mike', 'Mike123');
+VALUES('Thomas', 'Thomas123');
+VALUES('Rona', 'Rona123');
+============================================
+CREATE TABLE AccountHolders (
+aAccNo int PRIMARY KEY,
+aAccType varchar(10),
+aClientID varchar(15),
+aClientName varchar(20),
+aBallance decimal(9,2));
+
+INSERT INTO AccountHolders (aAccNo, aAccType, aClientID, aClientName, aBallance)
+VALUES (100, 'saving', 'Alan', 'Alan Aaa', 55034.55);
+VALUES (200, 'checking', 'Alan', 'Alan Aaa', 2034.42);
+VALUES (300, 'visa', 'Alan', 'Alan Aaa', 1945.45);
+VALUES (111, 'saving', 'Ola', 'Ola Oooo', 15034.95);
+VALUES (211, 'checking', 'Ola', 'Ola Oooo', 7034.12);
+VALUES (311, 'visa', 'Ola', 'Ola Oooo', 2000.00);
+VALUES (122, 'saving', 'Jana', 'Jana Jjjj', 3345.19);
+VALUES (222, 'checking', 'Jana', 'Jana Jjjj', 2222.22);
+VALUES (322, 'visa', 'Jana', 'Jana Jjjj', 1945.45);
+
+VALUES (133, 'saving', 'Mike', 'Mike Mmmm', 3745.49);
+VALUES (233, 'checking', 'Mike', 'Mike Mmmm', 703.21);
+VALUES (244, 'checking', 'Thomas', 'Thomas Tttt', 555.55);
+VALUES (344, 'visa', 'Thomas', 'Thomas Tttt', 2000.00);
+
+VALUES (255, 'checking', 'Rona', 'Rona Rrrr', 4356.16);
+============================================
+date: YYYY-MM-DD
+============================================
+CREATE TABLE Transactions (
+tID int PRIMARY KEY,
+tAccNo int,
+tDate date,
+tAction varchar(10),
+tAmount decimal(9,2));
+
+INSERT INTO Transactions (tID, tAccNo, tDate, tAction, tAmount)
+VALUES (4, 200, '2015-10-01', 'transfer', 220.13);
+VALUES (6, 100, '2015-10-11', 'deposit', 250.00);
+VALUES (8, 300, '2015-10-14', 'transfer', 55.55);
+VALUES (11, 100, '2015-10-23', 'deposit', 250.00);
+VALUES (13, 100, '2015-11-26', 'deposit', 250.00);
+VALUES (14, 200, '2015-12-01', 'transfer', 450.00);
+VALUES (16, 200, '2015-12-21', 'withdrawal', 500.00);
+VALUES (30, 200, '2016-07-01', 'withdrawal', 300.00);
+
+VALUES (5, 211, '2015-10-01', 'transfer', 220.13);
+VALUES (7, 111, '2015-10-11', 'deposit', 250.00);
+VALUES (9, 311, '2015-10-19', 'transfer', 55.55);
+VALUES (10, 111, '2015-10-21', 'deposit', 250.00);
+VALUES (12, 111, '2015-11-25', 'deposit', 250.00);
+VALUES (15, 211, '2015-12-05', 'transfer', 450.00);
+VALUES (17, 211, '2015-12-22', 'withdrawal', 500.00);
+VALUES (31, 211, '2016-07-06', 'withdrawal', 100.00);
+
+VALUES (1, 222, '2015-08-01', 'transfer', 220.13);
+VALUES (2, 122, '2015-08-11', 'deposit', 250.00);
+VALUES (3, 322, '2015-08-12', 'transfer', 55.55);
+VALUES (19, 122, '2016-03-11', 'deposit', 250.00);
+VALUES (24, 122, '2016-04-18', 'deposit', 250.00);
+VALUES (27, 222, '2016-05-09', 'transfer', 450.00);
+VALUES (29, 222, '2016-06-21', 'withdrawal', 500.00);
+
+VALUES (18, 233, '2016-01-21', 'withdrawal', 500.00);
+VALUES (20, 233, '2016-03-21', 'transfer', 450.00);
+VALUES (23, 133, '2016-04-11', 'deposit', 250.00);
+VALUES (26, 233, '2016-05-02', 'transfer', 220.13);
+VALUES (28, 133, '2016-05-11', 'deposit', 250.00);
+VALUES (34, 133, '2016-06-11', 'deposit', 250.00);
+
+VALUES (21, 244, '2016-03-21', 'transfer', 450.00);
+VALUES (22, 144, '2016-04-01', 'deposit', 250.00);
+VALUES (25, 244, '2016-05-01', 'transfer', 220.13);
+
+VALUES (35, 255, '2016-06-12', 'transfer', 450.00);
+VALUES (33, 255, '2016-04-17', 'deposit', 250.00);
+VALUES (32, 255, '2016-05-21', 'transfer', 220.13);
+============================================
